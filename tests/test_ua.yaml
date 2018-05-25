@@ -1154,7 +1154,7 @@ test_cases:
 
   - user_agent_string: 'Microsoft Office OneNote/15.37/170815 (Mac OS/10.13.4; Desktop; cs-CZ; NonAppStore; Apple/MacBookPro9,2)'
     family: 'OneNote'
-    major: ''
+    major: 
     minor: 
     patch:
 
@@ -1166,19 +1166,19 @@ test_cases:
 
   - user_agent_string: 'OneNote/15.0.4805.1000 (Windows/6.1; Desktop x64; it-IT; Desktop app; Supermicro/X10SRA-F)'
     family: 'OneNote'
-    major: ''
+    major: 
     minor: 
     patch:
 
   - user_agent_string: 'OneNote/16.0.7329.1045 (Windows/10.0; Desktop WOW64; en-US; Desktop app; Dell Inc./Latitude 7480)'
     family: 'OneNote'
-    major: ''
+    major: 
     minor: 
     patch:
 
   - user_agent_string: 'OneNote/16.10.1/180215 (iOS/11.3; Phone; en-GB; AppStore; Apple/iPhone9,3)'
     family: 'OneNote'
-    major: ''
+    major: 
     minor: 
     patch:
 
