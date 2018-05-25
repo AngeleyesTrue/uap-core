@@ -286,7 +286,7 @@ user_agent_parsers:
 
   # Seznam.cz browser (based on WebKit)
   - regex: '(SznProhlizec)/(\d+)\.(\d+)(?:\.(\d+))?'
-    family_replacement: 'Seznam prohlížeč'
+    family_replacement: 'Seznam prohlizec'
 
   # Coc Coc browser, based on Chrome (used in Vietnam)
   - regex: '(coc_coc_browser)/(\d+)\.(\d+)(?:\.(\d+))?'
@@ -371,6 +371,10 @@ user_agent_parsers:
   - regex: '(Slack_SSB)/(\d+)\.(\d+)\.(\d+)'
     family_replacement: 'Slack Desktop Client'
 
+  # Microsoft Teams desktop client (needs to be before Apple Mail, Electron, and Chrome as it gets wrongly detected on Mac OS otherwise)
+  - regex: '(Teams)/(\d+)\.(\d+)\.(\d+)'
+    family_replacement: 'Microsoft Teams Desktop Client'
+
   # HipChat provides a version on Mac, but not on Windows.
   # Needs to be before Chrome on Windows, and AppleMail on Mac.
   - regex: '(HipChat)/?(\d+)?'
@@ -398,6 +402,145 @@ user_agent_parsers:
   - regex: 'Microsoft Outlook (?:Mail )?16\.\d+\.\d+'
     family_replacement: 'Outlook'
     v1_replacement: '2016'
+
+  # Microsoft OneDrive for Android
+  - regex: '(OneDrive for Android)/(\d+)\.(\d+)'
+    family_replacement: 'OneDrive'
+
+  # Microsoft OneDrive WinUniversal App
+  - regex: '(OneDrive WinUniversal App)/(\d+)\.(\d+)\.(\d+)'
+    family_replacement: 'OneDrive'
+
+  # Microsoft OneDrive iOS App
+  - regex: '(OneDriveiOSApp)/(\d+)\.(\d+)'
+    family_replacement: 'OneDrive'
+
+  # Microsoft Word 2010
+  - regex: 'Microsoft Office Word 2010'
+    family_replacement: 'Word'
+    v1_replacement: '2010'
+
+  # Microsoft Word 2013
+  - regex: 'Microsoft Office Word 2013'
+    family_replacement: 'Word'
+    v1_replacement: '2013'
+
+  # Microsoft Word 2016
+  - regex: 'Microsoft Office Word 2014'
+    family_replacement: 'Word'
+    v1_replacement: '2016'
+
+  # Microsoft Word 2013
+  - regex: 'Microsoft Office Word/?15\.\d+'
+    family_replacement: 'Word'
+    v1_replacement: '2013'
+
+  # Microsoft Word 2016
+  - regex: 'Microsoft Office Word/?16\.\d+'
+    family_replacement: 'Word'
+    v1_replacement: '2016'
+
+  # Microsoft Word 2016
+  - regex: 'Microsoft Word ?16\.\d+'
+    family_replacement: 'Word'
+    v1_replacement: '2016'
+
+  # Microsoft Word iOSApp
+  - regex: 'Microsoft Office Word/(\d+)\.(\d+)\.(\d+) ?\(iOS'
+    family_replacement: 'Word'
+
+  # Microsoft Excel 2010
+  - regex: 'Microsoft Office Excel 2010'
+    family_replacement: 'Excel'
+    v1_replacement: '2010'
+
+  # Microsoft Excel 2013
+  - regex: 'Microsoft Office Excel 2013'
+    family_replacement: 'Excel'
+    v1_replacement: '2013'
+
+  # Microsoft Excel 2016
+  - regex: 'Microsoft Office Excel 2014'
+    family_replacement: 'Excel'
+    v1_replacement: '2016'
+
+  # Microsoft Excel 2013
+  - regex: 'Microsoft Office Excel/?16\.\d+'
+    family_replacement: 'Excel'
+    v1_replacement: '2016'
+
+  # Microsoft Excel 2016
+  - regex: 'Microsoft Excel ?15\.\d+'
+    family_replacement: 'Excel'
+    v1_replacement: '2013'
+
+  # Microsoft Excel 2016
+  - regex: 'Microsoft Excel ?16\.\d+'
+    family_replacement: 'Excel'
+    v1_replacement: '2016'
+
+  # Microsoft Excel iOSApp
+  - regex: 'Microsoft Office Excel/(\d+)\.(\d+)\.(\d+) ?\(iOS'
+    family_replacement: 'Excel'
+
+  # Microsoft PowerPoint 2010
+  - regex: 'Microsoft Office PowerPoint 2010'
+    family_replacement: 'PowerPoint'
+    v1_replacement: '2010'
+
+  # Microsoft PowerPoint 2013
+  - regex: 'Microsoft Office PowerPoint 2013'
+    family_replacement: 'PowerPoint'
+    v1_replacement: '2013'
+
+  # Microsoft PowerPoint 2016
+  - regex: 'Microsoft Office PowerPoint 2014'
+    family_replacement: 'PowerPoint'
+    v1_replacement: '2016'
+
+  # Microsoft PowerPoint 2013
+  - regex: 'Microsoft Office PowerPoint/?15\.\d+'
+    family_replacement: 'PowerPoint'
+    v1_replacement: '2013'
+
+  # Microsoft PowerPoint 2016
+  - regex: 'Microsoft Office PowerPoint/?16\.\d+'
+    family_replacement: 'PowerPoint'
+    v1_replacement: '2016'
+
+  # Microsoft PowerPoint 2016
+  - regex: 'Microsoft PowerPoint ?16\.\d+'
+    family_replacement: 'PowerPoint'
+    v1_replacement: '2016'
+
+  # Microsoft PowerPoint iOSApp
+  - regex: 'Microsoft Office PowerPoint/(\d+)\.(\d+)\.(\d+) ?\(iOS'
+    family_replacement: 'PowerPoint'
+
+  # Microsoft OneNote 2010
+  - regex: 'Microsoft Office OneNote 2010'
+    family_replacement: 'OneNote'
+    v1_replacement: '2010'
+
+  # Microsoft OneNote 2013
+  - regex: '(Microsoft Office OneNote 2013)'
+    family_replacement: 'OneNote'
+    v1_replacement: '2013'
+
+  # Microsoft OneNote 2016
+  - regex: 'OneNote 2014'
+    family_replacement: 'OneNote'
+    v1_replacement: '2016'
+
+  # Microsoft OneNote 2013
+  - regex: 'OneNote/?15\.\d+'
+    family_replacement: 'OneNote'
+    v1_replacement: ''
+
+  # Microsoft OneNote 2016
+  - regex: 'OneNote/?16\.\d+'
+    family_replacement: 'OneNote'
+    v1_replacement: ''
 
   # Windows Live Mail
   - regex: 'Outlook-Express\/7\.0.*'
@@ -899,6 +1042,10 @@ os_parsers:
     os_replacement: 'Windows'
     os_v1_replacement: '7'
 
+  - regex: '(Windows/6\.1)'
+    os_replacement: 'Windows'
+    os_v1_replacement: '7'
+
   - regex: '(Windows NT 6\.0)'
     os_replacement: 'Windows'
     os_v1_replacement: 'Vista'
@@ -925,11 +1072,19 @@ os_parsers:
     os_replacement: 'Windows'
     os_v1_replacement: '8.1'
 
+  - regex: '(Windows/8\.1)'
+    os_replacement: 'Windows'
+    os_v1_replacement: '8.1'
+
   - regex: '(Windows NT 6\.4)'
     os_replacement: 'Windows'
     os_v1_replacement: '10'
 
   - regex: '(Windows NT 10\.0)'
+    os_replacement: 'Windows'
+    os_v1_replacement: '10'
+
+  - regex: '(Windows/10)'
     os_replacement: 'Windows'
     os_v1_replacement: '10'
 
@@ -941,11 +1096,19 @@ os_parsers:
     os_replacement: 'Windows'
     os_v1_replacement: 'NT 4.0'
 
+  - regex: '(WinNT)'
+    os_replacement: 'Windows'
+    os_v1_replacement: 'NT'
+
+  - regex: '(Win NT 5\.0)'
+    os_replacement: 'Windows'
+    os_v1_replacement: 'NT'
+
   - regex: '(Windows ?CE)'
     os_replacement: 'Windows'
     os_v1_replacement: 'CE'
 
-  - regex: 'Win ?(95|98|3.1|NT|ME|2000)'
+  - regex: 'Win ?(98|NT|ME|2000)'
     os_replacement: 'Windows'
     os_v1_replacement: '$1'
 
@@ -953,7 +1116,15 @@ os_parsers:
     os_replacement: 'Windows'
     os_v1_replacement: '3.1'
 
+  - regex: 'Win3.1'
+    os_replacement: 'Windows'
+    os_v1_replacement: '3.1'
+
   - regex: 'Win32'
+    os_replacement: 'Windows'
+    os_v1_replacement: '95'
+
+  - regex: '(Win95)'
     os_replacement: 'Windows'
     os_v1_replacement: '95'
 
@@ -974,6 +1145,9 @@ os_parsers:
   # @ref: http://www.puredarwin.org/curious/versions
   ##########
   - regex: '((?:Mac[ +]?|; )OS[ +]X)[\s+/](?:(\d+)[_.](\d+)(?:[_.](\d+))?|Mach-O)'
+    os_replacement: 'Mac OS X'
+
+  - regex: '((?:Mac[ +]?|; )OS)[\s+/](?:(\d+)[_.](\d+)(?:[_.](\d+))?|Mach-O)'
     os_replacement: 'Mac OS X'
   # Leopard
   - regex: ' (Dar)(win)/(9).(\d+).*\((?:i386|x86_64|Power Macintosh)\)'
@@ -4718,6 +4892,12 @@ device_parsers:
     device_replacement: 'iOS-Device'
     brand_replacement: 'Apple'
     model_replacement: 'iOS-Device'
+
+  # @note: desktop applications show device info
+  - regex: 'Apple/(MacBookPro|MacBook|Macmini|MacBookAir)(\d+)\,(\d+)'
+    device_replacement: '$1'
+    brand_replacement: 'Apple'
+    model_replacement: '$2,$3'
 
   ##########################
   # Outlook on iOS >= 2.62.0

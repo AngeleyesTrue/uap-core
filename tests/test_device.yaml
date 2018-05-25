@@ -80059,3 +80059,23 @@ test_cases:
     family: 'Samsung SM-A520F'
     brand: 'Samsung'
     model: 'SM-A520F'
+    
+  - user_agent_string: 'Microsoft Office Excel/16.12.410 (Mac OS/10.11.6; Desktop; en-US; NonAppStore; Apple/MacBookPro5,5)'
+    family: 'MacBookPro'
+    brand: 'Apple'
+    model: '5,5'
+    
+  - user_agent_string: 'Microsoft Office Excel/16.12.410 (Mac OS/10.13.4; Desktop; en-US; NonAppStore; Apple/MacBook8,1)'
+    family: 'MacBook'
+    brand: 'Apple'
+    model: '8,1'
+    
+  - user_agent_string: 'Microsoft Office Excel/16.12.410 (Mac OS/10.13.4; Desktop; en-US; NonAppStore; Apple/Macmini7,1)'
+    family: 'Macmini'
+    brand: 'Apple'
+    model: '7,1'
+    
+  - user_agent_string: 'Microsoft Office PowerPoint/15.26.809 (Mac OS/10.13.4; Desktop; cs-CZ; NonAppStore; Apple/MacBookAir7,2)'
+    family: 'MacBookAir'
+    brand: 'Apple'
+    model: '7,2'

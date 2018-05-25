@@ -2391,6 +2391,27 @@ test_cases:
     patch:
     patch_minor:
 
+  - user_agent_string: 'OneDrive WinUniversal App/17.29.1.0 (Windows/10.0.14393.2007;Desktop;en-US;Dell Inc./Latitude E7470)'
+    family: 'Windows'
+    major: '10'
+    minor:
+    patch:
+    patch_minor:
+
+  - user_agent_string: 'OneNote/16.0.6925.1049 (Windows/10.0; Desktop WOW64; en-US; Desktop app; Dell Inc./Latitude E7470)'
+    family: 'Windows'
+    major: '10'
+    minor:
+    patch:
+    patch_minor:
+
+  - user_agent_string: 'OneNote/16.0.7329.1051 (Windows/6.1; Desktop WOW64; en-US; Desktop app; Dell Inc./Latitude E6440)'
+    family: 'Windows'
+    major: '7'
+    minor:
+    patch:
+    patch_minor:
+
   - user_agent_string: 'Mozilla/5.0 (Windows NT 6.3) AppleWebKit/537.36 (KHTML, like Gecko) BoxNotes/1.3.0 Chrome/56.0.2924.87 Electron/1.6.8 Safari/537.36'
     family: 'Windows'
     major: '8.1'
@@ -2481,6 +2502,20 @@ test_cases:
     major: '10'
     minor: '13'
     patch:
+    patch_minor:
+
+  - user_agent_string: 'Microsoft Office Excel/16.12.410 (Mac OS/10.11.6; Desktop; en-US; NonAppStore; Apple/MacBookPro5,5)'
+    family: 'Mac OS X'
+    major: '10'
+    minor: '11'
+    patch: '6'
+    patch_minor:
+
+  - user_agent_string: 'OneNote/16.11/180311 (Mac OS/10.12.6; Desktop; en-US; NonAppStore; Apple/MacBookPro6,2)'
+    family: 'Mac OS X'
+    major: '10'
+    minor: '12'
+    patch: '6'
     patch_minor:
 
   - user_agent_string: 'Outlook-iOS/665.29827.prod.iphone (2.63.0)'
