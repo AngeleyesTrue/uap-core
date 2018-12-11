@@ -7916,3 +7916,9 @@ test_cases:
     minor: '0'
     patch: '169645775'
 
+  - user_agent_string: 'Microsoft-WebDAV-MiniRedir/6.1.7601'
+    family: 'WebDAV'
+    major: 
+    minor: 
+    patch: 
+

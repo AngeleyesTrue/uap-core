@@ -2714,3 +2714,24 @@ test_cases:
     patch:
     patch_minor:
 
+  - user_agent_string: 'Microsoft-WebDAV-MiniRedir/6.1.7601'
+    family: 'Windows'
+    major: '7'
+    minor:
+    patch:
+    patch_minor:
+
+  - user_agent_string: 'Microsoft-WebDAV-MiniRedir/6.3.9600'
+    family: 'Windows'
+    major: '8'
+    minor: '1'
+    patch:
+    patch_minor:
+
+  - user_agent_string: 'Microsoft-WebDAV-MiniRedir/10.0.16299'
+    family: 'Windows'
+    major: '10'
+    minor:
+    patch:
+    patch_minor:
+
